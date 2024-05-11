@@ -1,0 +1,622 @@
+/* General reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+.container {
+    width: 90%;          
+    max-width: 1200px;   
+    margin: 0 auto;    
+    overflow: hidden;   
+}
+
+
+
+.container-header {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.header {
+    background-color: #fff;
+    padding: 10px 0;
+}
+
+/* .logo img {
+       max-width:240px;
+} */
+.logo h1 {
+    font-size: 36px;
+    margin-bottom: 0px;
+}
+.navbar {
+    display: flex;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black; 
+    padding: 10px 15px;
+    font-weight: bold;
+    display: block;
+    margin-right: 30px;
+}
+
+.navbar a.active {
+    border-bottom: 3px solid #933B0E; 
+    color: #933B0E;
+}
+
+.navbar a:hover{
+    color: #933B0E;
+    border-bottom: 3px solid #933B0E;
+}
+.header-icons {
+    display: flex;
+    align-items: center;
+    }
+.search-icon, .cart-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 42px;
+}
+
+.signup-btn {
+    background-color:#933B0E; 
+    border: none;
+    color: white;
+    padding: 16px 16px;
+    border-radius: 8px; 
+    cursor: pointer;
+    font-weight: bold;
+}
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #fff; 
+}
+
+.hero-content {
+    max-width: 50%;
+}
+.hero-content h1 {
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 130%;
+}
+
+h1 {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.order-now-btn {
+    background-color: #933B0E;
+    color: white;
+    border: none;
+    padding: 16px 16px;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.hero-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.image-background {
+    background-color: #FFB74B; 
+    border-bottom-left-radius: 500px;
+    height: 487px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: -120px; 
+    z-index: 0;
+}
+
+.image-background img {
+    position: relative;
+    z-index: 1;
+    max-width: 600px; 
+}
+.image-background-sectioncta {
+    background-color: #FFB74B;
+    border-bottom-right-radius: 500px; 
+    height: 487px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+}
+
+.image-background-sectioncta img {
+    position: relative;
+    z-index: 1;
+    max-width: 600px; 
+}
+
+.review {
+    display: flex;
+    align-items: center;
+    margin-top: -50px; 
+    z-index: 999;
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 14px 14px 14px 14px;
+    box-shadow: #000000;
+     }
+
+.review img {
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.review-text strong {
+    font-size: 16px;
+    color: #333;
+}
+
+.stars {
+    color: #ffd700;
+    font-size: 14px;
+}
+.services {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 20px 0; 
+}
+
+.service {
+    flex: 1; 
+    margin: 0 10px; 
+    text-align: center; 
+    padding: 20px; 
+    background-color: #ffffff; 
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+    border: 1px solid #CACACA;
+}
+
+.service img {
+    width: 50px; 
+    margin-bottom: 15px; 
+}
+
+.service h3 {
+    margin-bottom: 10px; 
+    color: #333; 
+    font-size: 36px; 
+    font-weight:bold
+}
+
+.service p {
+    font-size: 14px;
+    color: #666; 
+}
+/* Culinary Service */
+.culinary-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #ffffff; 
+}
+
+.culinary-image {
+    position: relative;
+    width: 50%;
+}
+
+
+.culinary-image img {
+    
+    z-index: 1;
+    height: 100%; 
+    display: block;
+    max-width: 550px;
+    left: -120px;
+
+}
+
+.culinary-content {
+    width: 50%;
+    padding: 20px;
+    text-align: left;
+}
+
+.culinary-content h2 {
+    font-size: 36px; 
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.culinary-content h3 {
+    font-size: 24px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.culinary-content p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.statistics {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stat strong {
+    display: block;
+    font-size: 20px;
+    color: #333
+}
+/* Culinary-Cards */
+.popular-culinary {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    margin-top:25px;
+}
+
+.menu-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+    margin-top: 35px;
+}
+
+.card {
+    width: 180px; 
+    border: 1px solid #ddd; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+    border-radius: 10px; 
+    overflow: hidden; 
+}
+
+.card img {
+    width: 100%;
+    height: auto; 
+    display: block; 
+}
+
+.card h4 {
+    margin: 10px;
+    color: #333;
+}
+
+.rating, .price {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 10px;
+}
+.card h4, .card .rating, .card .price {
+    padding: 5px 10px; 
+}
+
+.card:hover {
+    transform: scale(1.03); 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15); 
+}
+.view-all {
+    margin-top:25px;
+    background-color: #933B0E;
+    color: white;
+    border: none;
+    padding: 16px 16px;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 50%;
+    margin-top: 30px;
+    font-weight:normal;
+}
+.menu-cards a.card {
+    width: 240px; 
+    border: 1px solid #ddd; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+    border-radius: 10px; 
+    overflow: hidden; 
+    display: block; 
+    color: inherit; 
+    text-decoration: none; 
+}
+/* Baner CTA */
+.latest-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #FFA500; 
+    margin-top:25px;
+    border-radius: 10px;
+}
+
+.menu-image {
+    position: relative;
+    width: 40%;
+}
+
+.image-bg {
+    
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 80%;
+    height: 100%;
+    border-top-left-radius: 500px;
+    border-bottom-left-radius: 500px;
+    transform: translateX(-50%);
+    z-index: 0;
+}
+
+.menu-image img {
+    position: relative;
+    z-index: 1;
+    max-width: 550px;
+}
+
+.menu-details {
+    width: 50%;
+    padding: 20px;
+    text-align: right;
+}
+
+.menu-details h2 {
+    color: #ffffff;
+    font-size: 28px;
+}
+
+.menu-details p {
+    color: #ffffff;
+    margin: 20px 0;
+}
+
+.order-btn {
+    background-color:#933B0E;
+    ; 
+    color: #ffffff;
+    border: none;
+    padding: 16px 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 50%;
+    font-size: 24px;
+}
+
+.reviews {
+    margin-top: 20px;
+}
+
+
+.review img {
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.review-content strong {
+    color: #ffffff;
+    margin-right: 5px;
+}
+
+.stars {
+    color: #FFD700; 
+}
+/* Testimonials */
+.testimonials {
+    text-align: center;
+    padding: 40px;
+    margin-top: 35px;
+}
+
+.testimonial-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    overflow: hidden; 
+    position: relative;
+    margin-top: 25px;
+}
+
+.testimonial-card {
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #000000 ;
+}
+
+.testimonial-quote {
+    font-size: 16px;
+    line-height: 1.4;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.testimonial-author strong {
+    font-size: 18px;
+    color: #333;
+}
+
+.testimonial-author span {
+    display: block;
+    font-size: 14px;
+    color: #777;
+}
+
+.testimonial-nav {
+    background: none;
+    border: none;
+    color: #333;
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+/* Features Section */
+
+.features-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.features {
+    width: 50%;
+    padding: 20px;
+}
+
+.feature {
+    background-color: #FFA500; 
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.feature img {
+    width: 30px;
+    margin-bottom: 10px;
+}
+
+.feature h3 {
+    color: #000000;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.feature p {
+    color: #000000;
+    font-size: 16px;
+}
+
+.feature-images {
+    width: 50%;
+    text-align: center; 
+}
+
+.feature-images img {
+    width: 80%; 
+    max-width: 500px; 
+}
+/* Footer */
+.site-footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 20px;
+    font-size: 14px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding-bottom: 20px;
+}
+
+.footer-brand, .footer-links, .footer-social {
+    margin-right: 20px;
+}
+
+.footer-brand h2, .footer-column h3 {
+    color: #FFA500; 
+}
+
+.footer-brand p, .footer-bottom p {
+    color: #ccc;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links li a:hover {
+    color: #FFA500; 
+}
+
+.footer-social a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer-social img {
+    width: 20px; 
+    height: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #aaa;
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .navbar {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .header-icons {
+        order: 2;
+        width: 100%;
+        justify-content: center;
+        margin: 10px 0;
+    }
+
+    .signup-btn {
+        order: 1;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
