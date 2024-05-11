@@ -101,7 +101,7 @@ body {
     max-width: 50%;
 }
 .hero-content h1 {
-    font-weight: normal;
+    font-weight:500;
     font-size: 60px;
     line-height: 130%;
 }
@@ -222,7 +222,7 @@ h1 {
     margin-bottom: 10px; 
     color: #333; 
     font-size: 36px; 
-    font-weight:bold
+    font-weight:500;
 }
 
 .service p {
